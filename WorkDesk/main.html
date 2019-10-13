@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>WorkDesk</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>WorkDesk</h1>
+	</header>
+	
+	<menu>
+		<textarea  class="text_new_task"></textarea >
+		<button class="button add_task" onclick=addTask()></button>
+	</menu>
+	
+	<div class="work_space">
+		<div class="section" id="to_do">
+			<h2>To do</h2>
+		</div>
+		<div class="section in_progress">
+			<h2>In progress</h2>
+		</div>
+		<div class="section done">
+			<h2>Done</h2>
+		</div>
+		<div class = "reminders">
+		</div>
+	</div>
+	
+	<div class="details_overlay">
+		<div class="details">
+			<button class="close_details" onclick=closeDetails()></button>
+			<h2 class="details_header"></h2>
+			<select class="difficulty">
+				<option>Very important</option>
+				<option>Important</option>
+				<option>Little important</option>
+			</select>
+			<p>Details of task:</p>
+				<ul class="details_points">
+					
+				</ul>
+				
+			<div class="details_text"></div>
+			<p>Add a comment to the task:</p>
+			<textarea class="comment"></textarea>
+			<button class="add_comment">Add</button>
+			<p class="comment_list">Last comments:</p>
+				<ul class="details_points">
+					
+				</ul>
+			<button class="apply_details" onclick=closeDetails()>Apply</button>
+		</div>
+	<div>
+	
+	<footer>
+		
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
